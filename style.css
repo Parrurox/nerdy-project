@@ -107,12 +107,20 @@ input, select {
     text-decoration: none;
 }
 
+main {
+    padding-top: 100px;
+}
+
 body {
     background-color: #172126;
 
 }
 
 header {
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
     background-color: #949ba6;
     width: 100%;
     height: 100px;
@@ -152,7 +160,7 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
-@media only screen and (min-width:1000px){
+@media only screen and (min-width:700px){
     header .header-brand {
     
     margin:30px 0 ;
@@ -224,8 +232,8 @@ header nav ul li a {
 
 }
 
-@media only screen and (min-width:1000px){
-     .index-banner {
+@media only screen and (min-width:700px){
+    .index-banner {
     width:100%;
     height:500px;
     background-image: url('image/crazy.gif');
@@ -286,8 +294,8 @@ footer ul li a {
     transform: scale(1.1);
 }
 header nav ul li a:hover {
-    opacity: 0.5;
-    text-transform: lowercase;
+    opacity: 1;
+    font-family:  'Moo Lah Lah', cursive;
     
 
 }
