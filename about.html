@@ -16,6 +16,7 @@
 </head>
 
 <body>
+<!-- Header -->
     <header>
         <a href="index.html" class="header-brand">NERDY ALLEY</a>
         <nav>
@@ -25,9 +26,16 @@
                 <li><a href="Books.html">Books</a></li>
                 <li><a href="about.html">About me (●'◡'●)</a></li>
             </ul>
+            
         </nav>
     </header>
+    
+
+    
+
+     
     <main>
+        
         <img class="img-banner" src="https://i.pinimg.com/originals/e8/69/65/e869656b8131bbcb093f59914edff29b.jpg" alt="cat on a railing">
      <div class="wrapper">
         <article class="img-info">
@@ -37,8 +45,29 @@
         </article>
         <img class="img-self" src="https://img.wattpad.com/5aaf8967937851ef7b59ec997cce9b2a093a15d0/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6c3264325a436b634b33365470673d3d2d3933303538393838312e313662366637343938383666396363333632373931313539393636322e6a7067" alt="Parru">
       </div>
-    </main>
+    <!-- music. -->
+      <img src="icons/play.png" id="play">
+    <audio id="mysong">
+        <source src="music/M83 - Midnight City.mp3" type="audio/mpeg">
+    
+    </audio>
+    <script>
+        var mysong = document.getElementById("mysong");
+        var icon = document.getElementById("play");
 
+        icon.onclick = function () {
+            if (mysong.paused) {
+                mysong.play();
+                icon.src = "icons/pause.png";
+            }
+            else {
+                mysong.pause();
+                icon.src = "icons/play.png";
+            }
+        }
+    </script>
+    </main>
+<!-- footer. -->
     <footer>
         <ul>
             <li>Inspired from My friend<a href="https://riddhiraj.github.io/" target="_blank"> Riddhi.</a></li>

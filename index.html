@@ -35,6 +35,28 @@
             </div>
             
         </section>
+
+        <!-- music. -->
+        <img src="icons/play.png" id="play">
+        <audio id="mysong">
+            <source src="music/sam-smith-to-die-for.mp3" type="audio/mpeg">
+        
+        </audio>
+        <script>
+            var mysong = document.getElementById("mysong");
+            var icon = document.getElementById("play");
+
+            icon.onclick = function () {
+                if (mysong.paused) {
+                    mysong.play();
+                    icon.src = "icons/pause.png";
+                }
+                else {
+                    mysong.pause();
+                    icon.src = "icons/play.png";
+                }
+            }
+        </script>
     </main>
     <footer>
         <ul>

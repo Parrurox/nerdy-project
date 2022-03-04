@@ -202,6 +202,13 @@ header nav ul li a {
  }
 }
 
+header nav img{
+    float: right;
+    margin: 20px 20px;
+}
+
+
+
 
 
 
@@ -347,6 +354,16 @@ header nav ul li a {
    float:left;
 
  }
+    
+}
+
+/*music*/
+#play{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 89%;
+    size: 60px;
+    cursor: pointer;
     
 }
 

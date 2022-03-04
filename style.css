@@ -161,6 +161,8 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
+
+
 @media only screen and (min-width:700px){
     header .header-brand {
     
@@ -203,6 +205,8 @@ header nav ul li a {
     display: table;
 }
 
+
+
 .verticle-center {
     display: table-cell;
     vertical-align: middle;
@@ -217,7 +221,9 @@ header nav ul li a {
     line-height:60px;
     color: goldenrod;
     text-align: center;
-    text-shadow: 4px 4px 1px #111;
+    text-shadow: 4px 4px 5px #111;
+    backdrop-filter: blur(3px);
+
     
 
 }
@@ -230,7 +236,8 @@ header nav ul li a {
     font-weight: 400;
     color: #e6e600;
     text-align:center;
-    text-shadow: 3px 3px 1px #111;
+    text-shadow: 3px 3px 5px #111;
+    backdrop-filter: blur(3px);
 
 }
 
@@ -244,7 +251,18 @@ header nav ul li a {
     background-size: cover;
     display: table;
  }
+  
    
+}
+
+/*music*/
+#play{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 89%;
+    size: 60px;
+    cursor: pointer;
+    
 }
 
 /*footer*/
