@@ -358,9 +358,10 @@ main {
 
 
 /*main*/
+
 .top{
-    background-image: url(image/purple-dance.gif);
-    size: cover;
+    
+    
 }
 
 
@@ -411,7 +412,7 @@ main {
 .card {
     width: 200px;
     height: 220px;
-    margin-left: 120px;
+    margin-left: 130px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
     
     background: white;
@@ -454,79 +455,21 @@ main {
 
 }
 
-@media only screen and (min-width:768px) {
-     
-    .navigation{
-    display: block;
-    width: 100%;
-    height: 100px;
-    background-color:#949ba6;
 
- }
-
- .navigation ul {
-    
-
-    
- }
-
- .navigation ul li{
-    display: inline-block;
-    float: left;
-    line-height: 100px;
-    
- }
-
- .navigation ul li a {
-    text-decoration: none;
-    font-size: 14px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #1e1e1e;
-    padding: 0 20px;
-    display: block;
-
- }
-
- .navigation ul li a:hover{
-    color:whitesmoke;
- 
- }
-
-   
-    .img-banner {
-    display:block;
-    width:100%;
-    padding-bottom: 30px;
-
- }
-  .wrapper{
-    
-    width:600px;
-    margin: 0 auto;
- }
- .img-info h2{
-    padding: 20px 0px 0px;
-    
- }
-
- .img-info p {
-    padding: 20px 0px 0px;
-    
-
- }
- .img-self{
-   padding-top: 30px;
-
- }
-
-}
 
 @media only screen and (min-width:800px) {
+
+    main{
+        background-image: url(image/man-dance2.gif)
+        
+        
+    }
     .wrapper{
+     
     
-    width:800px;
+     width:800px;
    
- }
+  }
  .img-info{
     width:50%;
     float: right;
@@ -541,14 +484,15 @@ main {
     padding: 20px 0px 0px 30px;
     
 
- }
+   }
 
    .img-self{
-   padding-top: 0px;
-   width:50%;
-   float:left;
+    padding-top: 0px;
+    width:50%;
+    float:left;
 
- }
+   }
+
     
 }
 
@@ -642,8 +586,8 @@ header .header-brand:hover{
 
 .img-info h2:hover {
     transform: scale(1.1);
-    opacity: 0.4;
-    color: rgb(182, 50, 50);
+    
+    color: black
 }
 .img-info :hover .img-info h2 {
     transform: translateX(100px);

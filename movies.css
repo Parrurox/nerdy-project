@@ -334,8 +334,11 @@ main {
 .banner1{
     height: 700px;
     width:100%;
-    background-image: url(image/cuphead-dance.gif);
+    background-image: url('image/cuphead-dance.gif');
+    background-repeat: no-repeat;
+    background-position:center;
     background-size: cover;
+    display: table;
     
     
 }
