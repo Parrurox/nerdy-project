@@ -169,6 +169,7 @@ main {
     background-color: var(--bg-primary);
     transition: width 600ms ease;
     overflow: scroll;
+    
 }
 
 .navbar-nav {
@@ -356,9 +357,15 @@ main {
 
 
 
-/*imported*/
+/*main*/
+.top{
+    background-image: url(image/purple-dance.gif);
+    size: cover;
+}
+
 
 .wrapper{
+    background-image: url(image/hot-girl-dance.webp);
     
     width:100%;
 }
@@ -421,7 +428,7 @@ main {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
     cursor: pointer;
-    z-index: 10;
+    z-index: 1;
     transition: all .4s;
 
 }
@@ -431,7 +438,7 @@ main {
 }
 
 .card:hover {
-    width: 180px;
+    width: 200px;
 }
 
 .card::before {
@@ -493,6 +500,7 @@ main {
 
  }
   .wrapper{
+    
     width:600px;
     margin: 0 auto;
  }
@@ -513,9 +521,10 @@ main {
 
 }
 
-@media only screen and (min-width:1000px) {
+@media only screen and (min-width:800px) {
     .wrapper{
-    width:1000px;
+    
+    width:800px;
    
  }
  .img-info{
@@ -544,13 +553,28 @@ main {
 }
 
 /*music*/
+.jam{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 50%
+    size: 60px;
+    justify-content: center;
+    position: relative;
+    
+}
+
 #play{
     margin-top: 50px;
     margin-bottom: 20px;
-    margin-left: 89%;
+    margin-left: 50%;
     size: 60px;
     cursor: pointer;
+    transition: all .4s;
     
+}
+
+#play:hover{
+    transform: scale(1.1);
 }
 
 /*footer*/

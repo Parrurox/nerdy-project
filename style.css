@@ -161,6 +161,7 @@ main {
     background-color: var(--bg-primary);
     transition: width 600ms ease;
     overflow: scroll;
+    
 }
 
 .navbar-nav {
@@ -349,6 +350,7 @@ main {
     background-position: center;
     background-size: cover;
     display: table;
+    
 }
 
 
