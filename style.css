@@ -25,6 +25,7 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -116,6 +117,21 @@ body {
 
 }
 
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+
+    }
+    
+}
 
 /*body*/
 
@@ -345,11 +361,13 @@ main {
 .index-banner {
     width:100%;
     height:calc(100vh - 100px);
-    background-image: url('image/brain-fuck.jpg');
+    background-image: url('image/connected.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: table;
+    animation: transitionIn 2s;
+    border-radius: 2rem;
     
 }
 
@@ -367,9 +385,11 @@ main {
     font-size:50px;
     font-weight: 900;
     line-height:60px;
-    color: goldenrod;
+    color: rgb(207, 204, 5);
     text-align: center;
-    text-shadow: 4px 4px 5px #111;
+    text-shadow: 4px 4px 5px rgb(13, 14, 1);
+    animation: transitionIn 3.5s;
+    
     
 
     
@@ -382,9 +402,10 @@ main {
     font-size:22px;
     line-height:30px;
     font-weight: 400;
-    color: #e6e600;
+    color: rgb(255, 255, 255);
     text-align:center;
-    text-shadow: 3px 3px 5px #111;
+    text-shadow: 3px 3px 5px rgb(17, 22, 0);
+    animation: transitionIn 3s;
     
 
 }
@@ -398,6 +419,7 @@ main {
     background-position: center;
     background-size: cover;
     display: table;
+    animation: transitionIn 2s;
  }
   
    
@@ -420,6 +442,8 @@ footer {
     margin-top: 20px;
     background-color: #3e3c73;
     overflow: hidden;
+    animation: transitionIn 0.80s;
+
 }
 
 footer ul {

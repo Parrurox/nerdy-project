@@ -25,6 +25,7 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -354,7 +355,20 @@ main {
 
 
 
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
 
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+
+    }
+
+}
 
 
 /*main*/
@@ -381,6 +395,8 @@ main {
 }
 .img-info{
     width:100%;
+    animation: transitionIn 3s;
+    
 }
 .img-info h2{
     padding: 30px 30px 20px;
@@ -391,6 +407,7 @@ main {
     letter-spacing: 3px;
     text-shadow: 3px 3px 1px #949ba6;
     transition: transform 1s cubic-bezier(1,-0.33, 0, 1.57);
+    animation: transitionIn 4s;
 }
 
 .img-info p {
@@ -400,9 +417,11 @@ main {
     font-family: 'Fredoka',cursive;
     color:#111;
     line-height: 24px;
+    animation: transitionIn 4.5s;
 }
 .img-self{
     width:100%;
+    animation: transitionIn 3s;
 
 }
 
@@ -498,16 +517,20 @@ main {
 
 /*music*/
 .jam{
+    width: 60%;
+    height: 50px;
     margin-top: 50px;
     margin-bottom: 20px;
     margin-left: 50%
     size: 60px;
-    justify-content: center;
-    position: relative;
+    justify-content:center;
+    float: bottom;
+    
     
 }
 
 #play{
+
     margin-top: 50px;
     margin-bottom: 20px;
     margin-left: 50%;

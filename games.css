@@ -25,6 +25,7 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -124,9 +125,15 @@ body {
 
 body {
     color: black;
-    background-color: white;
+    
     margin: 0;
     padding: 0;
+    background-image: url(image/gaming-couple.gif);
+    
+    
+    
+    animation: transitionIn 2s;
+
 }
 
 body::-webkit-scrollbar {
@@ -329,8 +336,26 @@ main {
     display: block;
 }
 
+
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+
+    }
+
+}
+
+
 /*CONTENT*/
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Indie+Flower&family=Josefin+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Mono:wght@100&family=Yanone+Kaffeesatz:wght@300&display=swap');
 
 .heading{
     width: 100%;
@@ -343,46 +368,53 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: transitionIn 2s;
 }
 
 .info {
-    width: 100%;
+    width: 90%;
     height: 160px;
+    background:linear-gradient(to right, #00093c, #2d0b00);
+    
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
     
     margin: auto;
-    border-radius: 1.3rem;
+    
     background-color: rgb(5, 0, 0);
     align-items: center;
+    opacity: .8;
+    
 }
 
 h1{
     font-size: 46px;
     text-align: center;
     padding: auto;
-    font-family:'Josefin Sans',sans-serif; 
+    font-family:'Quicksand',sans-serif;
     color: #011d33;
 
 }
 h2 {
     padding: 1rem 1rem;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 28px;
+    font-family: 'Yanone Kaffeesatz',sans-serif;
+    font-size: 25px;
     text-align: center;
     text-shadow: whitesmoke;
-    color: rgba(112, 4, 94, 0.89);
+    color: rgba(221, 12, 12, 0.89);
 }
 h3{
     padding: 1rem 1rem;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
     
-    font-family:'Indie Flower',cursive;
-    color: grey;
+    font-family:'Roboto Mono',monospace;
+    color: rgb(93, 10, 187);
 
 }
 p {
-    font-size: 14px;
-    font-family: 'Comfortaa', cursive;
+    font-size: 13.5px;
+    font-family: 'Roboto Mono',monospace;
     text-align: center;
     color: whitesmoke
 } 
@@ -400,8 +432,11 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+    animation: transitionIn 3s;
 }
+
+
 
 .box2 {
     background-color: #011d33;
@@ -415,6 +450,8 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+    animation: transitionIn 3.5s;
 
 }
 
@@ -431,6 +468,8 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+    animation: transitionIn 3s;
 
 }
 
@@ -446,6 +485,8 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+    animation: transitionIn 3.5s;
 
 }
  
@@ -462,6 +503,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -477,6 +519,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -492,6 +535,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -507,6 +551,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -522,6 +567,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -537,6 +583,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -552,6 +599,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -567,6 +615,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -582,6 +631,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -597,6 +647,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -612,6 +663,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -627,6 +679,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -642,6 +695,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -657,6 +711,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -672,6 +727,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
 }
 
@@ -687,7 +743,12 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
 
+}
+.space{
+    width: 100%;
+    height: 70px;
 }
 
 
@@ -700,6 +761,14 @@ p {
     
     
    }
+
+   .info {
+    height: 100px;
+    padding-top: 1rem;
+    opacity: 1;
+   }
+
+ 
    
 
    .box1 {
@@ -869,8 +938,141 @@ p {
             float: left;
     }
 
+    .space {
+        width: 40%;
+        height: 80px;
+        float: left;
+    
+    }
+    .space2 {
+        width: 40%;
+        height: 80px;
+        float: right;
+    
+    }
+
 }
 
+#play {
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 50%;
+    size: 60px;
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
+#play:hover {
+    transform: scale(1.1);
+}
+
+/*effects*/
+.box1:hover {
+    transform: scale(1.1);
+
+}
+
+.box2:hover {
+    transform: scale(1.1);
+
+}
+
+.box3:hover {
+    transform: scale(1.1);
+
+}
+
+.box4:hover {
+    transform: scale(1.1);
+
+}
+
+
+.box5:hover {
+    transform: scale(1.1);
+
+}
+
+.box6:hover {
+    transform: scale(1.1);
+
+}
+
+.box7:hover {
+    transform: scale(1.1);
+
+}
+
+.box8:hover {
+    transform: scale(1.1);
+
+}
+
+.box9:hover {
+    transform: scale(1.1);
+
+}
+
+.box10:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+.box11:hover{
+    transform: scale(1.1);
+    
+}
+
+.box12:hover {
+    transform: scale(1.1);
+
+}
+
+.box13:hover {
+    transform: scale(1.1);
+
+}
+
+.box14:hover {
+    transform: scale(1.1);
+
+}
+
+
+.box15:hover {
+    transform: scale(1.1);
+
+}
+
+
+.box16:hover {
+    transform: scale(1.1);
+
+}
+
+.box17:hover {
+    transform: scale(1.1);
+
+}
+
+
+.box18:hover {
+    transform: scale(1.1);
+
+}
+
+.box19:hover {
+    transform: scale(1.1);
+
+}
+.box20:hover {
+    transform: scale(1.1);
+
+}
 
 
 /*Footer

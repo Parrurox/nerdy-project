@@ -25,6 +25,7 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -106,10 +107,12 @@ input, select {
 
 *{
     text-decoration: none;
+    box-sizing: border-box;
+    
 }
 
 body {
-    background-color: #7f1ca7;
+    background-color: #faf3fd;
 
 }
 
@@ -129,6 +132,10 @@ body {
     background-color: white;
     margin: 0;
     padding: 0;
+    background-image: url(image/booksbg.gif);
+    background-size: contain;
+    margin-bottom: 2rem;
+    
 }
 
 body::-webkit-scrollbar {
@@ -146,6 +153,8 @@ body::-webkit-scrollbar-thumb {
 main {
     margin-left: 5rem;
     padding: 1rem;
+    margin-bottom: 2rem;
+    
 }
 
 /*sidebar*/
@@ -266,6 +275,7 @@ main {
 
     main {
         margin: 0;
+        
     }
 }
 
@@ -379,6 +389,785 @@ main {
 }
 
 
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+
+    }
+
+}
+
+
+/*main*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Quicksand&family=Roboto+Mono:wght@100&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+.container {
+
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+    animation: transitionIn 2s;
+
+
+}
+
+.container .heading{
+
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heading h2{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 3em;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+
+
+
+}
+.container .heading h2 span{
+    font-weight: 50;
+}
+
+.info {
+    width: 65%;
+    height: 160px;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+
+    margin: auto;
+
+    background-color: rgb(5, 0, 0);
+    align-items: center;
+    opacity: .8;
+    
+}
+
+h3 {
+    padding: 1rem 1rem;
+    font-size: 30px;
+    text-align: center;
+
+    font-family: 'Roboto Mono', monospace;
+    color: goldenrod;
+
+}
+
+/*boxes*/
+.box1 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+    animation: transitionIn 3s;
+
+}
+
+.box2 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+    animation: transitionIn 3s;
+
+}
+
+.box3 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+    animation: transitionIn 3s;
+
+}
+
+
+.box4 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+    animation: transitionIn 3s;
+
+}
+
+.box5 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+    
+
+}
+
+.box6 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box7 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box8 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box9 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/9.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box10 {
+    background-color:;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/10.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box11 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+
+.box12 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/12.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box13 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/13.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box14 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/14.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box15 {
+    background-color: ;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/15.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+    
+
+}
+
+.box16 {
+    background-color:;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/16.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box17 {
+    
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/17.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box18 {
+    
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/18.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box19 {
+    
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/19.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box20 {
+    
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/20.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box21 {
+    
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/21.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.box22 {
+    
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    padding: 2rem 2rem 2rem;
+    margin-top: 25px;
+    border-radius: 1.3rem;
+    background-image: url(image/22.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transition: transform 1s cubic-bezier(1, -0.33, 0, 1.57);
+
+}
+
+.space {
+    width: 100%;
+    height: 80px;
+}
+
+
+@media only screen and (min-width:700px) {
+
+    .info{
+        height: 100px;
+        padding-top: 1rem;
+    }
+    .box1 {
+    
+        width: 46%;
+    
+        float: left;
+    }
+    
+    .box2 {
+        
+    
+        width: 46%;
+    
+    
+        float: right;
+    }
+
+    .box3 {
+    
+        width: 46%;
+    
+        float: left;
+    }
+    
+    .box4 {
+    
+    
+        width: 46%;
+    
+    
+        float: right;
+    }
+
+    .box5 {
+    
+        width: 46%;
+    
+        float: left;
+    }
+    
+    .box6 {
+    
+    
+        width: 46%;
+    
+    
+        float: right;
+    }
+
+    .box7 {
+    
+        width: 46%;
+    
+        float: left;
+    }
+    
+    .box8 {
+    
+    
+        width: 46%;
+    
+    
+        float: right;
+    }
+
+    .box9 {
+    
+        width: 46%;
+    
+        float: left;
+    }
+    
+    .box10 {
+    
+    
+        width: 46%;
+    
+    
+        float: right;
+    }
+
+    .box11 {
+    
+        width: 46%;
+    
+        float: left;
+    }
+    
+    .box12 {
+    
+    
+        width: 46%;
+    
+    
+        float: right;
+    }
+
+
+    .box13 {
+    
+        width: 46%;
+    
+        float: left;
+    }
+    
+    .box14 {
+    
+    
+        width: 46%;
+    
+    
+        float: right;
+    }
+
+    .box15 {
+    
+        width: 46%;
+    
+        float: left;
+    }
+    
+    .box16 {
+    
+    
+        width: 46%;
+    
+    
+        float: right;
+    }
+
+    .box17 {
+    
+        width: 46%;
+    
+        float: left;
+    }
+    
+    .box18 {
+    
+    
+        width: 46%;
+    
+    
+        float: right;
+    }
+
+    .box19 {
+    
+        width: 46%;
+    
+        float: left;
+    }
+    
+    .box20 {
+    
+    
+        width: 46%;
+    
+    
+        float: right;
+    }
+
+    .box21 {
+    
+        width: 46%;
+    
+        float: left;
+    }
+    
+    .box22 {
+    
+    
+        width: 46%;
+    
+    
+        float: right;
+    }
+
+    .space {
+        width: 40%;
+        height: 80px;
+        float: left;
+    
+    }
+    
+    .space2 {
+        width: 40%;
+        height: 80px;
+        float: right;
+    
+    }
+
+
+
+}
+
+
+#play {
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 50%;
+    size: 60px;
+    cursor: pointer;
+    transition: all .4s;
+
+}
+
+/*effects*/
+
+#play:hover {
+    transform: scale(1.1);
+}
+
+.box1:hover {
+    transform: scale(1.1);
+
+}
+
+.box2:hover {
+    transform: scale(1.1);
+
+}
+
+.box3:hover {
+    transform: scale(1.1);
+
+}
+
+.box4:hover {
+    transform: scale(1.1);
+
+}
+
+
+.box5:hover {
+    transform: scale(1.1);
+
+}
+
+.box6:hover {
+    transform: scale(1.1);
+
+}
+
+.box7:hover {
+    transform: scale(1.1);
+
+}
+
+.box8:hover {
+    transform: scale(1.1);
+
+}
+
+.box9:hover {
+    transform: scale(1.1);
+
+}
+
+.box10:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+.box11:hover {
+    transform: scale(1.1);
+
+}
+
+.box12:hover {
+    transform: scale(1.1);
+
+}
+
+.box13:hover {
+    transform: scale(1.1);
+
+}
+
+.box14:hover {
+    transform: scale(1.1);
+
+}
+
+
+.box15:hover {
+    transform: scale(1.1);
+
+}
+
+
+.box16:hover {
+    transform: scale(1.1);
+
+}
+
+.box17:hover {
+    transform: scale(1.1);
+
+}
+
+
+.box18:hover {
+    transform: scale(1.1);
+
+}
+
+.box19:hover {
+    transform: scale(1.1);
+
+}
+
+.box20:hover {
+    transform: scale(1.1);
+
+}
+
+
+.box21:hover {
+    transform: scale(1.1);
+
+}
+
+.box22:hover {
+    transform: scale(1.1);
+
+}
 
 /*footer*/
 footer {
